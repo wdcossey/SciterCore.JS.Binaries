@@ -14,3 +14,11 @@ Binaries are automatically resolved for the target configuration (i.e `x86`, `x6
 | Windows         | `x64`          | `sciter.dll`          | 
 | MacOS           | `x64`          | `sciter-osx-64.dylib` | 
 | Linux           | `x64`          | `libsciter-gtk.so`    | 
+
+### ⚠️.Net Framework 4.x / XamarinMac
+There was an issue with the `.targets` file for `SciterCore.JS.Binaries` with versions `<` `4.4.7.3`.
+
+If you are targeting `.Net Framework 4.x` or `XamarinMac` and are going to use a version `<` `4.4.7.3` check for packages ending with 
+`-windows` (marked as `prerelease`) to get the correct binaries bundled with your projects.
+
+i.e `4.4.7.2-windows`
